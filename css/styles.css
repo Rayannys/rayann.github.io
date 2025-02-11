@@ -736,5 +736,94 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Section Veille Technologique */
+#veille-techno {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    text-align: center;
+}
 
+#veille-techno h2 {
+    color: #00bcd4;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#veille-techno h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #00bcd4;
+}
+
+.veille-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.veille-card {
+    background-color: #00bbd432;
+    overflow: hidden;
+    width: 350px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veille-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.veille-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.veille-card h3 {
+    color: #00bcd4;
+    font-size: 24px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.veille-card p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.veille-card a {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.veille-card a:hover {
+    background-color: #0097a7;
+}
 
