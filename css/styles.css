@@ -321,7 +321,7 @@ header.scrolled {
     
     /* Texte de la couleur du bouton */
     .highlight {
-        color: #00bcd4; /* La même couleur que le bouton */
+        color: #3dd402; /* La même couleur que le bouton */
     }
     
 
@@ -341,7 +341,7 @@ header.scrolled {
 .cta button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #00bcd4;
+    background-color: #3dd402;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -349,7 +349,7 @@ header.scrolled {
 }
 
 .cta button:hover {
-    background-color: #008c9e;
+    background-color:#3dd402;
     transform: scale(1.05);
 }
 
@@ -364,18 +364,18 @@ header.scrolled {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #00bcd4;
+    background-color: #3dd402;
     text-decoration: none;
     color: #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons .icon.github:hover {
-    background-color: #008c9e;
+    background-color: #3dd402;
 }
 
 .social-icons .icon.linkedin:hover {
-    background-color: #008c9e;
+    background-color: #3dd402;
 }
 
 .social-icons .icon i {
@@ -419,7 +419,7 @@ header.scrolled {
 /******************* STYLE2 POUR LES PROJETS ****************************/
 
 .projects h2 {
-    color: #00bcd4;
+    color: #3dd402;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -437,7 +437,7 @@ h2::after {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #00bcd4;
+    background-color: #3dd402;
 }
 /* Ilkay Rayann > header */
 header {
@@ -504,7 +504,7 @@ nav .menu a {
 }
 
 .project-card h3 {
-    color: #00bcd4;
+    color: #3dd402;
     font-size: 24px;
     margin: 10px 0;
     text-transform: uppercase;
@@ -519,7 +519,7 @@ nav .menu a {
 }
 
 .project-card a {
-    background-color: #00bcd4;
+    background-color: #3dd402;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -532,7 +532,7 @@ nav .menu a {
 }
 
 .project-card a:hover {
-    background-color: #0097a7;
+    background-color:#3dd402;
 }
 
 .hidden {
@@ -540,7 +540,7 @@ nav .menu a {
 }
 
 #show-more-btn {
-    background-color: #00bcd4;
+    background-color:#3dd402;
     color: white;
     padding: 12px 25px;
     font-size: 18px;
@@ -552,7 +552,7 @@ nav .menu a {
 }
 
 #show-more-btn:hover {
-    background-color: #0097a7;
+    background-color: #3dd402;
 }
 
 @media (max-width: 768px) {
@@ -584,7 +584,7 @@ nav .menu a {
 }
 
 #experiences h2 {
-    color: #00bcd4;
+    color: #3dd402;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -606,7 +606,7 @@ nav .menu a {
 }
 
 .experience-card h3 {
-    color: #00bcd4;
+    color:#3dd402;
     margin-bottom: 10px;
 }
 
@@ -624,7 +624,7 @@ nav .menu a {
 }
 
 #formation h2 {
-    color: #00bcd4;
+    color: #3dd402;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -646,7 +646,7 @@ nav .menu a {
 }
 
 .formation-card h3 {
-    color: #00bcd4;
+    color: #3dd402;
     margin-bottom: 10px;
 }
 
@@ -675,7 +675,7 @@ nav .menu a {
 }
 
 .contact h2 {
-    color: #00bcd4;
+    color: #3dd402;
     font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -694,7 +694,7 @@ nav .menu a {
 }
 
 .contact-info i {
-    color: #00bcd4;
+    color: #3dd402;
     margin-right: 8px;
     font-size: 18px;
 }
@@ -706,7 +706,7 @@ nav .menu a {
 }
 
 .contact-info a:hover {
-    color: #00bcd4;
+    color: #3dd402;
 }
 
 @media (max-width: 768px) {
@@ -725,14 +725,14 @@ nav .menu a {
 }
 
 a {
-    color: #00a2ff;
+    color:#888888;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0288d1;
+    color: #888888;
     text-decoration: underline;
 }
 
@@ -757,7 +757,7 @@ a:hover {
 }
 
 #veille-techno h2 {
-    color: #00bcd4;
+    color:#3dd402;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -775,7 +775,7 @@ a:hover {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #00bcd4;
+    background-color: #3dd402;
 }
 
 .veille-container {
@@ -809,7 +809,7 @@ a:hover {
 }
 
 .veille-card h3 {
-    color: #00bcd4;
+    color:#3dd402;
     font-size: 24px;
     margin: 10px 0;
     text-transform: uppercase;
@@ -824,7 +824,7 @@ a:hover {
 }
 
 .veille-card a {
-    background-color: #00bcd4;
+    background-color: #3dd402;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
