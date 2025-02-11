@@ -737,6 +737,19 @@ a:hover {
 }
 
 /* Section Veille Technologique */
+#veille {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.veille-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 #veille-techno {
     background-color: #1c1c1c;
     padding: 40px 20px;
