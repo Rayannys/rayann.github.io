@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
 
-
-
 * {
-  margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -17,12 +15,12 @@ body {
 
 header {
     width: 100%;
-    position: fixed; /* La barre reste fixe */
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(155, 148, 148); /* Opacité pleine */
+    background-color: rgb(155, 148, 148);
     transition: background-color 0.3s ease;
-    z-index: 1000; /* Assure que la barre est au-dessus */
+    z-index: 1000;
 }
 
 .navbar {
@@ -32,9 +30,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 header.scrolled {
-    background-color: rgba(67, 67, 67, 0.7); 
+    background-color: rgba(67, 67, 67, 0.7);
 }
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -64,7 +64,7 @@ header.scrolled {
 }
 
 .nav-links a:hover {
-    color: #4e6e72;
+    color: #4CAF50;
 }
 
 .nav-links a:before {
@@ -74,7 +74,7 @@ header.scrolled {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: 4e6e72;
+    background-color: #4CAF50;
     transition: width 0.3s ease;
 }
 
@@ -100,8 +100,6 @@ header.scrolled {
     background-color: #ffffff;
 }
 
-
-/* "Bienvenue sur mon portfolio" */
 #accueil {
     position: relative;
     height: 50vh;
@@ -141,7 +139,7 @@ header.scrolled {
 #accueil .btn {
     margin-top: 30px;
     padding: 12px 25px;
-    background-color: #5a9ba3;
+    background-color: #4CAF50;
     color: #fff;
     font-size: 18px;
     text-decoration: none;
@@ -150,7 +148,7 @@ header.scrolled {
 }
 
 #accueil .btn:hover {
-    background-color: #0097a7;
+    background-color: #45a049;
 }
 
 @keyframes fadeIn {
@@ -236,36 +234,28 @@ header.scrolled {
     }
 }
 
-
-
-
-
-
-
-
-
-/* ******************************** Barre violette défilante ******************************************** */
 .sleek-scrolling-bar {
-    background:  #00bcd4; 
-    color: #ffffff; 
+    background: #4CAF50;
+    color: #ffffff;
     padding: 11px;
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
-    margin: 30px auto; 
-    max-width: 90%; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    margin: 30px auto;
+    max-width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sleek-scrolling-bar p {
     display: inline-block;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-weight: 500; 
-    letter-spacing: 0.5px; 
+    font-weight: 500;
+    letter-spacing: 0.5px;
     animation: sleek-scrolling 15s linear infinite;
     margin: 0;
 }
+
 @keyframes sleek-scrolling {
     0% {
         transform: translateX(100%);
@@ -275,73 +265,62 @@ header.scrolled {
     }
 }
 
-
-    /********************* STYLE2 POUR L IMAGE ET LE TEXTE A PROPOS DE MOI  ********************/
-    .main-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 50px auto;
-        padding: 20px;
-        gap: 40px;
-    }
-    
-    .left-column {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        text-align: left;
-        padding-left: 40px; /* Ajouter une marge à gauche */
-    }
-    
-    .right-column {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .profile-image {
-        width: 100%;
-        max-width: 400px;  /* Limite de la taille de l'image */
-        height: auto;
-        /* Pas de border-radius ici, l'image restera carrée/rectangulaire */
-    }
-    
-    /* Taille des textes */
-    .small {
-        font-size: 1rem;
-    }
-    
-    .large {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    
-    /* Texte de la couleur du bouton */
-    .highlight {
-        color: #00bcd4; /* La même couleur que le bouton */
-    }
-    
-
-
-
-
-  /* Conteneur principal */
-  .cta {
+.main-content {
     display: flex;
-    align-items: center; /* Aligne les éléments verticalement */
-    justify-content: flex-start; /* Les laisse à gauche (pas centrés) */
-    gap: 20px; /* Espacement entre le bouton et les icônes */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.large {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #4CAF50;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
     margin: 20px;
 }
 
-/* Bouton principal */
 .cta button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #00bcd4;
+    background-color: #4CAF50;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -349,13 +328,13 @@ header.scrolled {
 }
 
 .cta button:hover {
-    background-color: #008c9e;
+    background-color: #45a049;
     transform: scale(1.05);
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .social-icons .icon {
@@ -364,62 +343,51 @@ header.scrolled {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #00bcd4;
+    background-color: #4CAF50;
     text-decoration: none;
     color: #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons .icon.github:hover {
-    background-color: #008c9e;
+    background-color: #45a049;
 }
 
 .social-icons .icon.linkedin:hover {
-    background-color: #008c9e;
+    background-color: #45a049;
 }
 
 .social-icons .icon i {
     font-size: 20px;
 }
 
-
-    @media (max-width: 768px) {
-        .main-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-    
-        .left-column {
-            text-align: center;
-            padding-left: 0; 
-        }
-    
-        .right-column {
-            margin-top: 20px;
-        }
-    
-        .profile-image {
-            max-width: 100%; 
-        }
-    
-        .social-icons {
-            justify-content: center;
-        }
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
+    .left-column {
+        text-align: center;
+        padding-left: 0;
+    }
 
+    .right-column {
+        margin-top: 20px;
+    }
 
+    .profile-image {
+        max-width: 100%;
+    }
 
-
-
-
-
-
-/******************* STYLE2 POUR LES PROJETS ****************************/
+    .social-icons {
+        justify-content: center;
+    }
+}
 
 .projects h2 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -437,9 +405,9 @@ h2::after {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #00bcd4;
+    background-color: #4CAF50;
 }
-/* Ilkay Rayann > header */
+
 header {
     background-color: #201f1f;
     padding: 5px;
@@ -476,10 +444,10 @@ nav .menu a {
 }
 
 .project-card {
-    background-color: #00bbd432;
+    background-color: rgba(76, 175, 80, 0.2);
     overflow: hidden;
     width: 350px;
-    height: 625px; /* Fixez la hauteur ici */
+    height: 625px;
     padding: 20px;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -489,7 +457,6 @@ nav .menu a {
     justify-content: space-between;
 }
 
-
 .project-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
@@ -497,14 +464,14 @@ nav .menu a {
 
 .project-card img {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .project-card h3 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 24px;
     margin: 10px 0;
     text-transform: uppercase;
@@ -519,7 +486,7 @@ nav .menu a {
 }
 
 .project-card a {
-    background-color: #00bcd4;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -532,7 +499,7 @@ nav .menu a {
 }
 
 .project-card a:hover {
-    background-color: #0097a7;
+    background-color: #45a049;
 }
 
 .hidden {
@@ -540,7 +507,7 @@ nav .menu a {
 }
 
 #show-more-btn {
-    background-color: #00bcd4;
+    background-color: #4CAF50;
     color: white;
     padding: 12px 25px;
     font-size: 18px;
@@ -552,7 +519,7 @@ nav .menu a {
 }
 
 #show-more-btn:hover {
-    background-color: #0097a7;
+    background-color: #45a049;
 }
 
 @media (max-width: 768px) {
@@ -562,11 +529,11 @@ nav .menu a {
     }
 
     .project-card {
-        width: 80%; 
+        width: 80%;
     }
 
     .project-card img {
-        height: 250px; 
+        height: 250px;
     }
 
     #show-more-btn {
@@ -575,8 +542,6 @@ nav .menu a {
     }
 }
 
-
-
 #experiences {
     background-color: #1c1c1c;
     padding: 40px 20px;
@@ -584,7 +549,7 @@ nav .menu a {
 }
 
 #experiences h2 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -606,7 +571,7 @@ nav .menu a {
 }
 
 .experience-card h3 {
-    color: #00bcd4;
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
@@ -615,8 +580,6 @@ nav .menu a {
     line-height: 1.6;
 }
 
-
-
 #formation {
     background-color: #121212;
     padding: 40px 20px;
@@ -624,7 +587,7 @@ nav .menu a {
 }
 
 #formation h2 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -646,7 +609,7 @@ nav .menu a {
 }
 
 .formation-card h3 {
-    color: #00bcd4;
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
@@ -655,14 +618,12 @@ nav .menu a {
     line-height: 1.6;
 }
 
-
 #contact {
     background-color: #1c1c1c;
     padding: 40px 20px;
     text-align: center;
 }
 
-/* Section Contact */
 .contact {
     text-align: center;
     margin: 50px auto;
@@ -675,7 +636,7 @@ nav .menu a {
 }
 
 .contact h2 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -694,7 +655,7 @@ nav .menu a {
 }
 
 .contact-info i {
-    color: #00bcd4;
+    color: #4CAF50;
     margin-right: 8px;
     font-size: 18px;
 }
@@ -706,7 +667,7 @@ nav .menu a {
 }
 
 .contact-info a:hover {
-    color: #00bcd4;
+    color: #4CAF50;
 }
 
 @media (max-width: 768px) {
@@ -725,18 +686,17 @@ nav .menu a {
 }
 
 a {
-    color: #00a2ff;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0288d1;
+    color: #45a049;
     text-decoration: underline;
 }
 
-/* Section Veille Technologique */
 #veille {
     text-align: center;
     margin: 50px auto;
@@ -750,6 +710,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 #veille-techno {
     background-color: #1c1c1c;
     padding: 40px 20px;
@@ -757,7 +718,7 @@ a:hover {
 }
 
 #veille-techno h2 {
-    color: #00bcd4;
+    color: #4CAF50;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -775,7 +736,7 @@ a:hover {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #00bcd4;
+    background-color: #4CAF50;
 }
 
 .veille-container {
@@ -786,57 +747,10 @@ a:hover {
 }
 
 .veille-card {
-    background-color: #00bbd432;
+    background-color: rgba(76, 175, 80, 0.2);
     overflow: hidden;
     width: 350px;
     padding: 20px;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
 }
-
-.veille-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
-}
-
-.veille-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.veille-card h3 {
-    color: #00bcd4;
-    font-size: 24px;
-    margin: 10px 0;
-    text-transform: uppercase;
-}
-
-.veille-card p {
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.veille-card a {
-    background-color: #00bcd4;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.veille-card a:hover {
-    background-color: #0097a7;
-}
-
