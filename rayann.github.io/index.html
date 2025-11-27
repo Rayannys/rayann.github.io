@@ -18,10 +18,12 @@
                 <ul class="nav-links">
                     <li><a href="#accueil" id="menu-accueil">Accueil</a></li>
                     <li><a href="#about" id="menu-about">À propos</a></li>
+                    <li><a href="#competences" id="menu-competences">Compétences</a></li>
                     <li><a href="#projets" id="menu-projets">Projets</a></li>
-                    <li><a href="#veille" id="menu-veille">Veille technologique</a></li>
+                    <li><a href="#veille" id="menu-veille">Veille</a></li>
                     <li><a href="#experiences" id="menu-experiences">Expériences</a></li>
                     <li><a href="#formation" id="menu-formation">Formation</a></li>
+                    <li><a href="#certifications" id="menu-certifications">Certifications</a></li>
                     <li><a href="#contact" id="menu-contact">Contact</a></li>
                 </ul>
             </nav>
@@ -36,40 +38,108 @@
     <!-- Section Accueil -->
     <section id="accueil">
         <div class="content">
-            <h1>Bienvenue sur mon Portfolio !</h1>
-            <p>Je suis Ilkay Rayann, étudiant en dernière année de bachelor en cybersécurité et ethical hacking à l'Efrrei Paris.</p>
-            <br>
-            <a href="CV_ILKAY_RAYANN.pdf" class="btn" download>Télécharger mon CV</a>
+            <div class="hero-badge">Bienvenue sur mon Portfolio</div>
+            <h1>Ilkay Rayann</h1>
+            <p class="hero-subtitle">Étudiant en Cybersécurité & Ethical Hacking</p>
+            <p class="hero-description">Passionné par l'innovation technologique et la sécurité informatique. Actuellement en alternance en tant qu'Analyste IAM chez Abeille Assurances.</p>
+            <div class="hero-buttons">
+                <a href="CV_ILKAY_RAYANN.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Télécharger mon CV</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Me contacter</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Découvrir</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- Section Sleek Scrolling Bar -->
     <div class="sleek-scrolling-bar">
-        <p>🎓 Salut, je suis Rayann, étudiant en dernière année de bachelor en cybersécurité et ethical hacking à l'Efrrei Paris.</p>
+        <p>🚀 • B3 Cybersécurité et Ethical Hacking Efrei • Alternant Analyste IAM chez Abeille Assurances</p>
     </div>
 
     <!-- Section À propos -->
     <section id="about" class="main-content">
         <div class="left-column">
-            <h2 class="small">À propos de moi</h2>
-            <h1 class="large">Je suis Rayann, étudiant en deuxième année <span class="highlight">BTS SIO option
-                    SLAM</span>.</h1>
-            <p class="small">Explorer les nouvelles technologies et relever des défis font partie de mes motivations
-                principales.</p>
+            <h2 class="section-label">À propos de moi</h2>
+            <h1 class="section-title">Je suis Rayann, étudiant en dernière année de Bachelor <span class="highlight">Cybersécurité et Ethical Hacking à l'Efrei</span>.</h1>
+            <p class="section-description">Passionné par la cybersécurité et l'innovation technologique, je me spécialise dans la gestion des identités et des accès (IAM). Actuellement en alternance chez Abeille Assurances, j'allie théorie et pratique pour développer mes compétences en sécurité informatique.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Années d'expérience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Détermination</div>
+                </div>
+            </div>
             <div class="cta">
-                
                 <div class="social-icons">
-                    <a href="https://github.com/Rayannys" target="_blank" class="icon github">
+                    <a href="https://github.com/Rayannys" target="_blank" class="icon github" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/rayann-ilkay-1a6562274/" target="_blank" class="icon linkedin">
+                    <a href="https://www.linkedin.com/in/rayann-ilkay-1a6562274/" target="_blank" class="icon linkedin" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
         </div>
         <div class="right-column">
-            <img src="it.jpg" alt="Image de Profil" class="profile-image">
+            <div class="profile-image-wrapper">
+                <img src="it.jpg" alt="Ilkay Rayann" class="profile-image">
+                <div class="profile-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Cybersécurité</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="competences-section">
+        <div class="section-header">
+            <h2 class="section-label">Compétences</h2>
+            <h1 class="section-title">Technologies & Outils</h1>
+        </div>
+        <div class="competences-container">
+            <div class="competence-category">
+                <h3><i class="fas fa-code"></i> Développement</h3>
+                <div class="competence-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+            <div class="competence-category">
+                <h3><i class="fas fa-shield-alt"></i> Cybersécurité</h3>
+                <div class="competence-tags">
+                    <span class="tag">IAM</span>
+                    <span class="tag">Gestion des identités</span>
+                    <span class="tag">Sécurité des systèmes</span>
+                    <span class="tag">ISO 27001</span>
+                    <span class="tag">KPI & Indicateurs</span>
+                    <span class="tag">Protection des comptes</span>
+                    <span class="tag">CyberArk</span>
+                </div>
+            </div>
+            <div class="competence-category">
+                <h3><i class="fas fa-tools"></i> Outils & Administration</h3>
+                <div class="competence-tags">
+                    <span class="tag">GLPI</span>
+                    <span class="tag">Google Workspace</span>
+                    <span class="tag">Microsoft Entra ID</span>
+                    <span class="tag">Mirador</span>
+                    <span class="tag">Cegid Y2</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -81,42 +151,87 @@
            
             <!-- Projet 1: Site Web de Vente de Voiture -->
             <div class="project-card">
-                <img src="css/images/PPE1.jpg" alt="Site Web de Vente de Voiture" class="project-image">
-                <h3>Site Web de Vente de Voiture</h3>
-                <p class="project-description">Ce projet est un site web pour une entreprise fictive de Vente 
-                    de voiture, permettant aux clients de voir en ligne, les véhicules disponibles à la vente. L'interface est simple, claire et adaptée aux
-                    besoins des utilisateurs, avec un design moderne.</p>
-                <p><strong>Technologies utilisées :</strong> HTML, CSS, PHP, MySQL</p>
-                <a href="https://tinyurl.com/43s59w9e" class="drive-link" target="_blank">Voir sur Google Drive</a>
+                <div class="project-image-wrapper">
+                    <img src="css/images/PPE1.jpg" alt="Site Web de Vente de Voiture" class="project-image">
+                    <div class="project-overlay">
+                        <a href="https://tinyurl.com/43s59w9e" class="project-link" target="_blank" aria-label="Voir le projet">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Développement Web</div>
+                    <h3>Site Web de Vente de Voiture</h3>
+                    <p class="project-description">Site web e-commerce pour une entreprise fictive de vente de voitures. Interface moderne et intuitive permettant aux clients de consulter les véhicules disponibles en ligne avec un système de gestion complet.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <a href="https://tinyurl.com/43s59w9e" class="drive-link" target="_blank">
+                        <i class="fas fa-arrow-right"></i> Voir le projet
+                    </a>
+                </div>
             </div>
 
- 
             <!-- Projet 2: Application Administrative service client -->
             <div class="project-card">
-                <img src="css/images/SAV.jpg" alt="Application Administrative" class="project-image">
-                <h3>Application Administrative</h3>
-                <p class="project-description">Ce projet est une Application de matériels informatique, centré sur l'administration pour le service client. 
-                    Cette application est développé en C#. Il présente un design minimaliste avec une expérience de jeu fluide et descontrôles simples.</p>
-                <p><strong>Technologies utilisées :</strong> Langage C#, SQL</p>
-                <a href="https://tinyurl.com/43s59w9e" class="drive-link" target="_blank">Voir sur Google Drive</a>
+                <div class="project-image-wrapper">
+                    <img src="css/images/SAV.jpg" alt="Application Administrative" class="project-image">
+                    <div class="project-overlay">
+                        <a href="https://tinyurl.com/43s59w9e" class="project-link" target="_blank" aria-label="Voir le projet">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Application Desktop</div>
+                    <h3>Application Administrative</h3>
+                    <p class="project-description">Application de gestion de matériels informatiques pour le service client. Solution complète développée en C# avec une interface utilisateur intuitive et des fonctionnalités d'administration avancées.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">.NET</span>
+                    </div>
+                    <a href="https://tinyurl.com/43s59w9e" class="drive-link" target="_blank">
+                        <i class="fas fa-arrow-right"></i> Voir le projet
+                    </a>
+                </div>
             </div>
       
         </div>
     </section>
 
-              <!-- Section Veille Technologique -->
-<section id="veille">
-
-    <div class="veille-container">
-        <div class="veille-card">
-            <img src="css/images/E4.jpg" alt="Veille technologique" class="veille-image">
-            <h3>Veille technologique sur les voitures autonomes</h3>
-            <p class="veille-description">Ce projet est une veille technologique sur les voitures autonomes, centré sur l'utilisation d'une veille à travers plusieurs outils, tels que Google Alerte ou bien les réseaux sociaux.</p>
-            <p><strong>Technologie utilisée :</strong> Powerpoint</p>
-            <a href="https://tinyurl.com/yckx34cf" class="drive-link" target="_blank">Voir sur Google Présentation</a>
+    <!-- Section Veille Technologique -->
+    <section id="veille">
+        <h2>Veille Technologique</h2>
+        <div class="veille-container">
+            <div class="veille-card">
+                <div class="project-image-wrapper">
+                    <img src="css/images/E4.jpg" alt="Veille technologique" class="veille-image">
+                    <div class="project-overlay">
+                        <a href="https://tinyurl.com/yckx34cf" class="project-link" target="_blank" aria-label="Voir la veille">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Veille Technologique</div>
+                    <h3>Veille technologique sur les voitures autonomes</h3>
+                    <p class="veille-description">Analyse approfondie des dernières innovations et tendances dans le domaine des voitures autonomes. Cette veille utilise plusieurs outils de monitoring comme Google Alerts et les réseaux sociaux pour rester à jour avec les dernières avancées technologiques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PowerPoint</span>
+                        <span class="tech-tag">Google Alerts</span>
+                        <span class="tech-tag">Réseaux sociaux</span>
+                    </div>
+                    <a href="https://tinyurl.com/yckx34cf" class="drive-link" target="_blank">
+                        <i class="fas fa-arrow-right"></i> Voir la présentation
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
    
 
     <!-- Section Expériences -->
@@ -124,34 +239,50 @@
         <h2>Mes Expériences</h2>
         <div class="experiences-container">
             <div class="experience-card">
-                <h3>Alternant Technicien Informatique</h3>
-                <p>Entreprise Balibaris - Septembre 2023 à Aout 2025</p>
-               
-                <p>  
-                   <br>• Administrateur GLPI
-              <br> <br>• Administrateur GOOGLE WORKSPACE
-              <br> <br>•  Administrateur MIRADOR 
-              <br> <br>• Administrateur MICROSOFT ENTRA ID
-              <br> <br>• Administrateur CEGID Y2
-              <br> <br>• Administration des postes de travail
-              <br> <br>• Assistance technique aux utilisateurs et boutiques
-              <br> <br>• Création de procédures informatiques</p>
-
-           
-           
+                <div class="experience-header">
+                    <h3>Analyste IAM</h3>
+                    <span class="experience-badge">En cours</span>
+                </div>
+                <p class="experience-company">Abeille Assurances</p>
+                <p class="experience-date">Septembre 2025 à Septembre 2026</p>
+                <ul class="experience-list">
+                    <li>Automatiser la gestion des identités, des habilitations et les contrôles de sécurité</li>
+                    <li>Générer des indicateurs pour améliorer la conformité et la sécurité</li>
+                    <li>Provisionner les habilitations dans les applications du système d'information</li>
+                    <li>Collaborer avec les équipes opérationnelles pour élaborer et maintenir des rôles métiers adaptés</li>
+                    <li>Fournir une assistance aux collaborateurs pour leurs besoins d'accès</li>
+                    <li>Effectuer des contrôles réguliers de conformité et générer des rapports</li>
+                </ul>
             </div>
             <div class="experience-card">
-                <h3>Vendeur</h3>
-                <p>Entreprise H&M - Septembre 2023</p>
-                <p>
-                    
-               <br> • Mise en place et promotion des opérations commerciales
-           <br> <br>• Rangement des rayons, remise en ordre des article
-           <br> <br>• Accompagnement des clients dans leurs achats, remise de conseils
-                    personnalisés, présentation de produits correspondant à leurs critères de
-                    recherche
-           <br> <br>• Accueil des clients, réponse à leurs demandes de renseignements avec
-                    efficacité et courtoisie</p>
+                <div class="experience-header">
+                    <h3>Alternant Technicien Informatique</h3>
+                </div>
+                <p class="experience-company">Balibaris</p>
+                <p class="experience-date">Septembre 2023 à Août 2025</p>
+                <ul class="experience-list">
+                    <li>Administrateur GLPI</li>
+                    <li>Administrateur Google Workspace</li>
+                    <li>Administrateur Mirador</li>
+                    <li>Administrateur Microsoft Entra ID</li>
+                    <li>Administrateur Cegid Y2</li>
+                    <li>Administration des postes de travail</li>
+                    <li>Assistance technique aux utilisateurs et boutiques</li>
+                    <li>Création de procédures informatiques</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Vendeur</h3>
+                </div>
+                <p class="experience-company">H&M</p>
+                <p class="experience-date">Septembre 2023</p>
+                <ul class="experience-list">
+                    <li>Mise en place et promotion des opérations commerciales</li>
+                    <li>Rangement des rayons, remise en ordre des articles</li>
+                    <li>Accompagnement des clients dans leurs achats, remise de conseils personnalisés</li>
+                    <li>Accueil des clients, réponse à leurs demandes de renseignements avec efficacité et courtoisie</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -162,33 +293,190 @@
         <h2>Ma Formation</h2>
         <div class="formation-container">
             <div class="formation-card">
-                <h3>BTS SIO Option SLAM</h3>
-                <p>École Aurlom - 2023 à 2025</p>
-                <p>
-                    <br>• Projet : Création d’un site de e-commerce
-              <br><br>  • Projet : Création d’une application administrative</p>
-               
-                 <br>   <a href="https://www.aurlom.com/c-bts/cms/2452-bts-sio.html?_gl=1*n3flul*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAx9q6BhCDARIsACwUxu5YPir5GxwnkuAHNRBmlIlKyrubEKLatRWYUTVWZgVsoILCwoQP7mUaAr54EALw_wcB">Aurlom</a>
+                <div class="formation-image-wrapper">
+                    <img src="photos écoles/Villejuif-EFREI.jpg" alt="EFREI Paris" class="formation-image" onerror="this.style.display='none';">
+                </div>
+                <div class="formation-content">
+                    <div class="formation-header">
+                        <h3>Bachelor Cybersécurité et Ethical Hacking</h3>
+                        <span class="formation-badge">En cours</span>
+                    </div>
+                    <p class="formation-school">EFREI Paris (École d'Ingénieur)</p>
+                    <p class="formation-date">Septembre 2025 à Juin 2026</p>
+                    <ul class="formation-list">
+                        <li>Sécurité, Systèmes et Réseaux</li>
+                        <li>Conception et Développement</li>
+                        <li>Management et Droit</li>
+                        <li>Loi Informatique</li>
+                        <li>ISO 27001</li>
+                    </ul>
+                </div>
             </div>
             <div class="formation-card">
-                <h3>Baccalauréat Général -Option Mathématiques et SES</h3>
-                <p>Lycée Louise Michel - 2022 à 2023</p>
-                <br> <a href="https://www.louisemichelbobigny.fr/bacGeneral">Lycée Louise Michel</a>
+                <div class="formation-image-wrapper">
+                    <img src="photos écoles/Aurlom.jpg" alt="Aurlom" class="formation-image" onerror="this.style.display='none';">
+                </div>
+                <div class="formation-content">
+                    <div class="formation-header">
+                        <h3>BTS SIO Option SLAM</h3>
+                    </div>
+                    <p class="formation-school">École Aurlom</p>
+                    <p class="formation-date">2023 à 2025</p>
+                    <ul class="formation-list">
+                        <li>Projet : Création d'un site de e-commerce</li>
+                        <li>Projet : Création d'une application administrative</li>
+                    </ul>
+                    <a href="https://www.aurlom.com/c-bts/cms/2452-bts-sio.html?_gl=1*n3flul*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAx9q6BhCDARIsACwUxu5YPir5GxwnkuAHNRBmlIlKyrubEKLatRWYUTVWZgVsoILCwoQP7mUaAr54EALw_wcB" class="formation-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> En savoir plus sur Aurlom
+                    </a>
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="formation-image-wrapper">
+                    <img src="photos écoles/lycee louise michel.jpg" alt="Lycée Louise Michel" class="formation-image" onerror="this.style.display='none';">
+                </div>
+                <div class="formation-content">
+                    <div class="formation-header">
+                        <h3>Baccalauréat Général</h3>
+                    </div>
+                    <p class="formation-school">Lycée Louise Michel</p>
+                    <p class="formation-date">2022 à 2023</p>
+                    <p class="formation-option">Option : Mathématiques et SES</p>
+                    <a href="https://www.louisemichelbobigny.fr/bacGeneral" class="formation-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> En savoir plus sur le lycée
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
+    <!-- Section Certifications -->
+    <section id="certifications">
+        <h2>Licences et Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>CSS Essentials</h3>
+                        <p class="certification-issuer">Cisco</p>
+                    </div>
+                </div>
+                <p class="certification-date">Date de délivrance : Juin 2025</p>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Ethical Hacker</h3>
+                        <p class="certification-issuer">Cisco</p>
+                    </div>
+                </div>
+                <p class="certification-date">Date de délivrance : Mai 2025</p>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>HTML Essentials</h3>
+                        <p class="certification-issuer">Cisco</p>
+                    </div>
+                </div>
+                <p class="certification-date">Date de délivrance : Mai 2025</p>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p class="certification-issuer">Cisco</p>
+                    </div>
+                </div>
+                <p class="certification-date">Date de délivrance : Mai 2025</p>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>CCNA</h3>
+                        <p class="certification-issuer">Cisco</p>
+                    </div>
+                </div>
+                <p class="certification-date">
+                    <span class="certification-badge">En cours</span>
+                </p>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+                        <p class="certification-issuer">Microsoft</p>
+                    </div>
+                </div>
+                <p class="certification-date">
+                    <span class="certification-badge">En cours</span>
+                </p>
             </div>
         </div>
     </section>
     
 
     <!-- Section Contact -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Pour toute question, n'hésitez pas à me contacter :</p>
-    <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:">Rayann.ilkay.28@gmail.com</p>
-        <p><i class="fas fa-phone-alt"></i> <a href="tel:">06 52 30 30 69</a></p>
-    </div>
-</section>
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-label">Contact</h2>
+            <h1 class="section-title">Travaillons ensemble</h1>
+            <p class="section-description">Vous avez un projet ou une question ? N'hésitez pas à me contacter, je serai ravi d'échanger avec vous.</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <a href="mailto:Rayann.ilkay.28@gmail.com">Rayann.ilkay.28@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Téléphone</h3>
+                    <a href="tel:+33652303069">06 52 30 30 69</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/rayann-ilkay-1a6562274/" target="_blank">Profil LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/script.js"></script>
