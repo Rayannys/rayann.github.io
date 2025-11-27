@@ -739,6 +739,7 @@ header.scrolled {
 .projects h2,
 #experiences h2,
 #formation h2,
+#certifications h2,
 #veille h2,
 .competences-section .section-title {
     color: var(--text-primary);
@@ -756,6 +757,7 @@ header.scrolled {
 .projects h2::after,
 #experiences h2::after,
 #formation h2::after,
+#certifications h2::after,
 .competences-section .section-title::after {
     content: '';
     position: absolute;
@@ -1341,6 +1343,126 @@ header.scrolled {
     font-size: 0.85rem;
 }
 
+/* ==================== CERTIFICATIONS SECTION ==================== */
+#certifications {
+    padding: 100px 2rem;
+    text-align: center;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 60px auto 0;
+}
+
+.certification-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: left;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.certification-card:hover::before {
+    transform: scaleX(1);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    background: var(--bg-card-hover);
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.certification-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.certification-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover .certification-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+}
+
+.certification-info {
+    flex: 1;
+}
+
+.certification-info h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.certification-issuer {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.certification-date {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.certification-date::before {
+    content: '📅';
+    font-size: 1rem;
+}
+
+.certification-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    border-radius: 50px;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 /* ==================== CONTACT SECTION ==================== */
 .contact {
     text-align: center;
@@ -1518,6 +1640,7 @@ header.scrolled {
     .projects-container,
     .experiences-container,
     .formation-container,
+    .certifications-container,
     .competences-container {
         grid-template-columns: 1fr;
     }
@@ -1609,6 +1732,7 @@ header.scrolled {
     .projects h2,
     #experiences h2,
     #formation h2,
+    #certifications h2,
     .competences-section .section-title,
     .contact .section-title {
         font-size: 1.8rem;
@@ -1621,6 +1745,7 @@ header.scrolled {
     .project-card,
     .experience-card,
     .formation-card,
+    .certification-card,
     .competence-category,
     .contact-item {
         padding: 20px;
@@ -1639,7 +1764,8 @@ header.scrolled {
     .projects,
     #veille,
     #experiences,
-    #formation {
+    #formation,
+    #certifications {
         padding: 60px 1rem;
         margin: 0 auto;
     }
