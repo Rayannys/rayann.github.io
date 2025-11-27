@@ -100,8 +100,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observer les cartes de projets, expériences, formations, compétences
-document.querySelectorAll('.project-card, .experience-card, .formation-card, .veille-card, .competence-category').forEach(card => {
+// Observer les cartes de projets, expériences, formations, certifications, compétences
+document.querySelectorAll('.project-card, .experience-card, .formation-card, .certification-card, .veille-card, .competence-category').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
