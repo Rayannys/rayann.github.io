@@ -1836,3 +1836,77 @@ header.scrolled {
 
 
 
+
+/* ==================== AUTOMATISATION SECTION ==================== */
+.auto-intro {
+    max-width: 800px;
+    margin: -20px auto 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.auto-intro strong {
+    color: var(--text-primary);
+}
+
+.project-card.auto-card {
+    min-height: 0;
+}
+
+.auto-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--gradient-soft);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.auto-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.auto-links .drive-link {
+    margin-top: 0;
+    padding: 12px 16px;
+}
+
+.drive-link.auto-code {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+.drive-link.auto-code:hover {
+    background: var(--bg-card-hover);
+    box-shadow: none;
+}
+
+.auto-repo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auto-repo:hover {
+    color: var(--text-primary);
+}
+
+@media (max-width: 480px) {
+    .auto-links {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,61 @@
+# Pipeline d'automatisation (GitHub Actions - gratuit sur un dépôt public)
+#
+# En simple : à chaque fois que je pousse du code dans le dossier "automatisation",
+# GitHub démarre une machine virtuelle, et :
+#   1. vérifie la qualité de mes scripts PowerShell (PSScriptAnalyzer)
+#   2. lance les 3 scripts sur les données de démonstration
+#   3. enregistre les nouveaux rapports HTML dans le dépôt -> ils sont en ligne sur mon portfolio
+# Si un script plante, le pipeline passe au rouge et je le vois tout de suite.
+
+name: Automatisation IAM / PAM
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automatisation/**'
+      - '.github/workflows/automatisation.yml'
+  workflow_dispatch:        # bouton "Run workflow" pour le lancer à la main
+
+permissions:
+  contents: write           # nécessaire pour enregistrer les rapports dans le dépôt
+
+jobs:
+  rapports:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh         # toutes les commandes sont en PowerShell
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Contrôle qualité du code (PSScriptAnalyzer)
+        run: |
+          Install-Module PSScriptAnalyzer -Force -Scope CurrentUser
+          $erreurs = Invoke-ScriptAnalyzer -Path ./automatisation -Recurse -Severity Error
+          $erreurs | Format-Table -AutoSize
+          if ($erreurs) { throw "PSScriptAnalyzer a trouvé $($erreurs.Count) erreur(s)" }
+
+      - name: 1 - Revue des accès RH vs AD
+        run: ./automatisation/01-revue-des-acces/Invoke-RevueAcces.ps1 -DateReference '2026-10-19'
+
+      - name: 2 - Onboarding CyberArk (simulation)
+        run: ./automatisation/02-cyberark-onboarding/Import-ComptesCyberArk.ps1
+
+      - name: 3 - Conformité CyberArk
+        run: ./automatisation/03-cyberark-conformite/Get-RapportConformitePAM.ps1 -DateReference '2026-10-19'
+
+      - name: Publier les rapports
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add automatisation/rapports
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            git commit -m 'Rapports régénérés automatiquement'
+            git push
+          } else {
+            Write-Host 'Aucun changement dans les rapports'
+          }
+          exit 0   # sinon GitHub prend le code 1 de "git diff" pour une erreur

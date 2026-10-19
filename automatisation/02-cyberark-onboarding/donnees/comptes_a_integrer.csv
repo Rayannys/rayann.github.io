@@ -1,0 +1,9 @@
+Coffre;Plateforme;Adresse;Utilisateur;Demandeur
+WIN-SRVFIC-PRD;WinServerLocal;srv-fic01.abeille-demo.local;Administrateur;Equipe Systeme
+WIN-SRVFIC-PRD;WinServerLocal;srv-fic02.abeille-demo.local;Administrateur;Equipe Systeme
+UNX-WEB-REC;UnixSSH;web-rec01.abeille-demo.local;root;Equipe Linux
+DB-ORACLE-PRD;Oracle;ora-prd01.abeille-demo.local;SYSTEM;Equipe DBA
+coffre_test;WinServerLocal;srv-test.abeille-demo.local;Administrateur;Inconnu
+WIN-SRVFIC-PRD;PlateformeInventee;srv-fic03.abeille-demo.local;Administrateur;Equipe Systeme
+UNX-WEB-REC;UnixSSH;;root;Equipe Linux
+WIN-SRVFIC-PRD;WinServerLocal;srv-fic01.abeille-demo.local;Administrateur;Equipe Systeme

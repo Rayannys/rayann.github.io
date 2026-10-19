@@ -1,0 +1,6 @@
+{
+  "PvwaUrl": "https://pvwa.abeille-demo.local",
+  "PlateformesAutorisees": ["WinServerLocal", "WinDomain", "UnixSSH", "Oracle", "MSSql"],
+  "RegleNomCoffre": "^(WIN|UNX|DB)-[A-Z0-9]+-(PRD|REC|DEV)$",
+  "GestionAutomatique": true
+}

@@ -1,0 +1,16 @@
+Matricule;Nom;Prenom;Service;Statut;DateSortie
+A1001;Martin;Sophie;Indemnisation;Actif;
+A1002;Bernard;Lucas;DSI;Actif;
+A1003;Dubois;Emma;Comptabilite;Parti;2026-08-31
+A1004;Thomas;Hugo;Souscription;Actif;
+A1005;Robert;Lea;DSI;Actif;
+A1006;Richard;Nathan;Indemnisation;Parti;2026-09-15
+A1007;Petit;Chloe;Juridique;Actif;
+A1008;Durand;Louis;Souscription;Actif;
+A1009;Leroy;Manon;Comptabilite;Actif;
+A1010;Moreau;Jules;Marketing;Parti;2026-06-30
+A1011;Simon;Camille;Indemnisation;Actif;
+A1012;Laurent;Tom;DSI;Actif;
+A1013;Lefebvre;Ines;Marketing;Actif;
+A1014;Michel;Adam;Juridique;Actif;
+A1015;Garcia;Jade;Souscription;Actif;

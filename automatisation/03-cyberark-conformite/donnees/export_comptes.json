@@ -1,0 +1,260 @@
+{
+  "value": [
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinServerLocal",
+      "safeName": "WIN-SRVFIC-PRD",
+      "id": "12_1",
+      "name": "Operating System-WinServerLocal-srv-fic01.abeille-demo.local-Administrateur",
+      "address": "srv-fic01.abeille-demo.local",
+      "userName": "Administrateur",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1791360000,
+        "lastReconciledTime": 1788768000
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinServerLocal",
+      "safeName": "WIN-SRVFIC-PRD",
+      "id": "12_2",
+      "name": "Operating System-WinServerLocal-srv-fic02.abeille-demo.local-Administrateur",
+      "address": "srv-fic02.abeille-demo.local",
+      "userName": "Administrateur",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1790236800,
+        "lastReconciledTime": 1787644800
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinServerLocal",
+      "safeName": "WIN-SRVFIC-PRD",
+      "id": "12_3",
+      "name": "Operating System-WinServerLocal-srv-fic03.abeille-demo.local-Administrateur",
+      "address": "srv-fic03.abeille-demo.local",
+      "userName": "Administrateur",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "failure",
+        "lastModifiedTime": 1780819200,
+        "lastReconciledTime": 1778227200
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinDomain",
+      "safeName": "WIN-AD-PRD",
+      "id": "12_4",
+      "name": "Operating System-WinDomain-abeille-demo.local-adm_lbernard",
+      "address": "abeille-demo.local",
+      "userName": "adm_lbernard",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1791964800,
+        "lastReconciledTime": 1789372800
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinDomain",
+      "safeName": "WIN-AD-PRD",
+      "id": "12_5",
+      "name": "Operating System-WinDomain-abeille-demo.local-adm_lrobert",
+      "address": "abeille-demo.local",
+      "userName": "adm_lrobert",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1788940800,
+        "lastReconciledTime": 1786348800
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "WinDomain",
+      "safeName": "WIN-AD-PRD",
+      "id": "12_6",
+      "name": "Operating System-WinDomain-abeille-demo.local-adm_ancien",
+      "address": "abeille-demo.local",
+      "userName": "adm_ancien",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": false,
+        "status": "success",
+        "lastModifiedTime": 1765612800,
+        "lastReconciledTime": 1763020800,
+        "manualManagementReason": "Compte en cours de décommissionnement"
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "UnixSSH",
+      "safeName": "UNX-WEB-REC",
+      "id": "12_7",
+      "name": "Operating System-UnixSSH-web-rec01.abeille-demo.local-root",
+      "address": "web-rec01.abeille-demo.local",
+      "userName": "root",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1789804800,
+        "lastReconciledTime": 1787212800
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "UnixSSH",
+      "safeName": "UNX-WEB-REC",
+      "id": "12_8",
+      "name": "Operating System-UnixSSH-web-rec02.abeille-demo.local-root",
+      "address": "web-rec02.abeille-demo.local",
+      "userName": "root",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "failure",
+        "lastModifiedTime": 1784102400,
+        "lastReconciledTime": 1781510400
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "UnixSSH",
+      "safeName": "UNX-WEB-PRD",
+      "id": "12_9",
+      "name": "Operating System-UnixSSH-web-prd01.abeille-demo.local-root",
+      "address": "web-prd01.abeille-demo.local",
+      "userName": "root",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1791705600,
+        "lastReconciledTime": 1789113600
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "UnixSSH",
+      "safeName": "UNX-WEB-PRD",
+      "id": "12_10",
+      "name": "Operating System-UnixSSH-web-prd02.abeille-demo.local-root",
+      "address": "web-prd02.abeille-demo.local",
+      "userName": "root",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": false,
+        "status": "success",
+        "lastModifiedTime": 1745740800,
+        "lastReconciledTime": 1743148800,
+        "manualManagementReason": "Application legacy - mot de passe codé en dur"
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "Oracle",
+      "safeName": "DB-ORACLE-PRD",
+      "id": "12_11",
+      "name": "Operating System-Oracle-ora-prd01.abeille-demo.local-SYSTEM",
+      "address": "ora-prd01.abeille-demo.local",
+      "userName": "SYSTEM",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1787212800,
+        "lastReconciledTime": 1784620800
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "Oracle",
+      "safeName": "DB-ORACLE-PRD",
+      "id": "12_12",
+      "name": "Operating System-Oracle-ora-prd01.abeille-demo.local-SYS",
+      "address": "ora-prd01.abeille-demo.local",
+      "userName": "SYS",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1784534400,
+        "lastReconciledTime": 1781942400
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "MSSql",
+      "safeName": "DB-SQL-REC",
+      "id": "12_13",
+      "name": "Operating System-MSSql-sql-rec01.abeille-demo.local-sa",
+      "address": "sql-rec01.abeille-demo.local",
+      "userName": "sa",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": true,
+        "status": "success",
+        "lastModifiedTime": 1791187200,
+        "lastReconciledTime": 1788595200
+      },
+      "createdTime": 1757836800
+    },
+    {
+      "categoryModificationTime": 1757836800,
+      "platformId": "MSSql",
+      "safeName": "DB-SQL-REC",
+      "id": "12_14",
+      "name": "Operating System-MSSql-sql-rec02.abeille-demo.local-sa",
+      "address": "sql-rec02.abeille-demo.local",
+      "userName": "sa",
+      "secretType": "password",
+      "platformAccountProperties": {},
+      "secretManagement": {
+        "automaticManagementEnabled": false,
+        "status": "success",
+        "lastModifiedTime": 1775116800,
+        "lastReconciledTime": 1772524800,
+        "manualManagementReason": ""
+      },
+      "createdTime": 1757836800
+    }
+  ],
+  "count": 14
+}

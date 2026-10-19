@@ -20,6 +20,7 @@
                     <li><a href="#about" id="menu-about">À propos</a></li>
                     <li><a href="#competences" id="menu-competences">Compétences</a></li>
                     <li><a href="#projets" id="menu-projets">Projets</a></li>
+                    <li><a href="#automatisation" id="menu-automatisation">Automatisation</a></li>
                     <li><a href="#veille" id="menu-veille">Veille</a></li>
                     <li><a href="#experiences" id="menu-experiences">Expériences</a></li>
                     <li><a href="#formation" id="menu-formation">Formation</a></li>
@@ -116,6 +117,9 @@
                     <span class="tag">JavaScript</span>
                     <span class="tag">MySQL</span>
                     <span class="tag">SQL</span>
+                    <span class="tag">PowerShell</span>
+                    <span class="tag">API REST</span>
+                    <span class="tag">GitHub Actions</span>
                 </div>
             </div>
             <div class="competence-category">
@@ -201,6 +205,72 @@
             </div>
       
         </div>
+    </section>
+
+    <!-- Section Automatisation -->
+    <section id="automatisation" class="projects">
+        <h2>Automatisation</h2>
+        <p class="auto-intro">Scripts PowerShell que j'ai développés pour automatiser des tâches IAM et PAM. Ils sont exécutés automatiquement par un pipeline <strong>GitHub Actions</strong> à chaque mise à jour, et les rapports ci-dessous sont générés par ce pipeline. Données 100&nbsp;% fictives.</p>
+        <div class="projects-container">
+
+            <div class="project-card auto-card">
+                <div class="auto-icon"><i class="fas fa-user-check"></i></div>
+                <div class="project-content">
+                    <div class="project-category">Automatisation IAM</div>
+                    <h3>Revue des accès RH vs Active Directory</h3>
+                    <p class="project-description">Script qui croise l'export RH et les comptes Active Directory pour détecter automatiquement les partants encore actifs, les comptes orphelins, les comptes dormants et les droits d'administration hors DSI. Un contrôle qui prend des heures dans Excel, fait en quelques secondes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">CSV</span>
+                        <span class="tech-tag">Active Directory</span>
+                        <span class="tech-tag">Rapport HTML</span>
+                    </div>
+                    <div class="auto-links">
+                        <a href="automatisation/rapports/revue-acces.html" class="drive-link" target="_blank"><i class="fas fa-chart-bar"></i> Voir le rapport</a>
+                        <a href="https://github.com/Rayannys/rayann.github.io/tree/main/automatisation/01-revue-des-acces" class="drive-link auto-code" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card auto-card">
+                <div class="auto-icon"><i class="fas fa-key"></i></div>
+                <div class="project-content">
+                    <div class="project-category">Automatisation PAM</div>
+                    <h3>Onboarding de comptes CyberArk</h3>
+                    <p class="project-description">Intégration en masse de comptes à privilèges via l'API REST CyberArk. Chaque demande est contrôlée avant l'envoi (nommage des coffres, plateformes autorisées, doublons), avec un mode simulation par défaut, aucun mot de passe dans le code et un journal d'audit.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">CyberArk</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">JSON</span>
+                    </div>
+                    <div class="auto-links">
+                        <a href="automatisation/rapports/onboarding-cyberark.html" class="drive-link" target="_blank"><i class="fas fa-chart-bar"></i> Voir le rapport</a>
+                        <a href="https://github.com/Rayannys/rayann.github.io/tree/main/automatisation/02-cyberark-onboarding" class="drive-link auto-code" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card auto-card">
+                <div class="auto-icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="project-content">
+                    <div class="project-category">Conformité PAM</div>
+                    <h3>Rapport de conformité CyberArk</h3>
+                    <p class="project-description">Contrôle de la rotation des mots de passe gérée par le CPM : rotation désactivée sans justification, mots de passe de plus de 90 jours, changements en échec. Calcul d'un taux de conformité global et par coffre, utile pour les audits.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">CyberArk</span>
+                        <span class="tech-tag">KPI</span>
+                        <span class="tech-tag">ISO 27001</span>
+                    </div>
+                    <div class="auto-links">
+                        <a href="automatisation/rapports/conformite-pam.html" class="drive-link" target="_blank"><i class="fas fa-chart-bar"></i> Voir le rapport</a>
+                        <a href="https://github.com/Rayannys/rayann.github.io/tree/main/automatisation/03-cyberark-conformite" class="drive-link auto-code" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Rayannys/rayann.github.io/tree/main/automatisation" class="auto-repo" target="_blank"><i class="fab fa-github"></i> Tout le code et la documentation sur GitHub</a>
     </section>
 
     <!-- Section Veille Technologique -->
