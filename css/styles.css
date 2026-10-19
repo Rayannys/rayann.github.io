@@ -5,6 +5,14 @@
    (large pour les titres, normale pour le texte).
    ========================================================= */
 
+@font-face {
+    font-family: "Archivo";
+    src: url("../fonts/archivo.woff2") format("woff2");
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+    font-display: swap;
+}
+
 :root {
     --paper: #f3f4f6;
     --surface: #ffffff;
@@ -111,8 +119,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .hero__kicker { color: var(--granted); font-weight: 600; margin-bottom: 18px; }
 .hero__title {
-    font-size: clamp(2.3rem, 5.2vw, 4.25rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.02;
-    max-width: 15ch;
+    font-size: clamp(2.1rem, 4.6vw, 3.7rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.04;
+    max-width: 16ch;
 }
 .hero__lead { margin-top: 24px; color: var(--steel); font-size: 1.12rem; max-width: 56ch; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
@@ -324,3 +332,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .merci h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; }
 .merci p { color: var(--steel); }
 .merci .merci__status { display: inline-flex; align-items: center; gap: 8px; color: var(--granted); background: var(--granted-soft); font-weight: 600; padding: 4px 12px; border-radius: 999px; }
+
+.form__status { min-height: 1.4em; font-size: 0.95rem; color: var(--on-ink-muted); }
+.form__status.is-ok { color: #7fdcb4; font-weight: 600; }
+.form__status.is-error { color: #ffb4a6; font-weight: 600; }
+.form button[disabled] { opacity: .6; cursor: wait; }

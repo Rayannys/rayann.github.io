@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayann Ilkay - Analyste IAM</title>
     <meta name="description" content="Portfolio de Rayann Ilkay, analyste IAM en alternance chez Abeille Assurances : gestion des identités et des accès, CyberArk, automatisation PowerShell.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -37,7 +35,7 @@
             <div class="hero__text">
                 <p class="hero__kicker">Analyste IAM en alternance chez Abeille Assurances</p>
                 <h1 class="hero__title">Je m'assure que chacun accède à ce dont il a besoin. Pas plus.</h1>
-                <p class="hero__lead">Étudiant en Bachelor Cybersécurité &amp; Ethical Hacking à l'EFREI Paris. Je travaille sur la gestion des identités et des accès : habilitations, rôles métiers, contrôles de conformité, et les comptes à privilèges avec CyberArk.</p>
+                <p class="hero__lead">Étudiant en Master 1 Cybersécurité à l'EFREI Paris. Je travaille sur la gestion des identités et des accès : habilitations, rôles métiers, contrôles de conformité, et les comptes à privilèges avec CyberArk.</p>
                 <div class="hero__actions">
                     <a href="CV_ILKAY_RAYANN.pdf" class="btn btn--solid" download><i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger mon CV</a>
                     <a href="#contact" class="btn btn--line">Me contacter</a>
@@ -68,13 +66,14 @@
                         <ul>
                             <li>IAM</li>
                             <li>CyberArk</li>
-                            <li>Microsoft Entra ID</li>
+                            <li>SailPoint</li>
+                            <li>Entra ID</li>
                             <li>PowerShell</li>
                             <li>ISO 27001</li>
                         </ul>
                     </div>
                     <footer class="badge__foot">
-                        <span>EFREI Paris</span>
+                        <span>EFREI Paris, M1 Cybersécurité</span>
                         <span class="barcode" aria-hidden="true"></span>
                     </footer>
                 </article>
@@ -106,8 +105,8 @@
                             </ul>
                         </li>
                         <li class="timeline__item">
-                            <p class="timeline__date">Sept. 2023 - août 2025</p>
-                            <h4>Technicien informatique (alternance)</h4>
+                            <p class="timeline__date">Sept. 2023 - sept. 2025</p>
+                            <h4>Assistant DSI (alternance)</h4>
                             <p class="timeline__org">Balibaris</p>
                             <ul>
                                 <li>Administration de Microsoft Entra ID, Google Workspace, GLPI, Mirador et Cegid Y2</li>
@@ -130,6 +129,11 @@
                     <h3 class="parcours__title">Formation</h3>
                     <ol class="timeline">
                         <li class="timeline__item timeline__item--now">
+                            <p class="timeline__date">Depuis sept. 2026 <span class="tag tag--now">En cours</span></p>
+                            <h4>Master 1 Cybersécurité</h4>
+                            <p class="timeline__org">EFREI Paris, en alternance</p>
+                        </li>
+                        <li class="timeline__item">
                             <p class="timeline__date">2025 - 2026</p>
                             <h4>Bachelor Cybersécurité &amp; Ethical Hacking</h4>
                             <p class="timeline__org">EFREI Paris, école d'ingénieurs</p>
@@ -256,7 +260,7 @@
             <div class="skills">
                 <div class="skills__group">
                     <h3>Identités et accès</h3>
-                    <ul class="chips chips--lg"><li>IAM</li><li>Gestion des habilitations</li><li>Rôles métiers</li><li>CyberArk (PAM)</li><li>Revue des accès</li><li>Indicateurs de conformité</li><li>ISO 27001</li></ul>
+                    <ul class="chips chips--lg"><li>IAM</li><li>Gestion des habilitations</li><li>Rôles métiers</li><li>CyberArk (PAM)</li><li>SailPoint</li><li>Revue des accès</li><li>Indicateurs de conformité</li><li>ISO 27001</li></ul>
                 </div>
                 <div class="skills__group">
                     <h3>Automatisation et développement</h3>
@@ -275,7 +279,8 @@
                     <li><span>Introduction to Cybersecurity</span><span class="certs__meta">Cisco, mai 2025</span></li>
                     <li><span>HTML Essentials</span><span class="certs__meta">Cisco, mai 2025</span></li>
                     <li><span>CSS Essentials</span><span class="certs__meta">Cisco, juin 2025</span></li>
-                    <li><span>CCNA</span><span class="certs__meta"><span class="tag tag--now">En cours</span></span></li>
+                    <li><span>CCNA</span><span class="certs__meta">Cisco</span></li>
+                    <li><span>SailPoint</span><span class="certs__meta">SailPoint</span></li>
                     <li><span>Microsoft Azure Fundamentals (AZ-900)</span><span class="certs__meta"><span class="tag tag--now">En cours</span></span></li>
                 </ul>
             </div>
@@ -314,7 +319,7 @@
                     </ul>
                 </div>
 
-                <form class="form" action="https://formsubmit.co/rayann.ilkay.28@gmail.com" method="POST">
+                <form class="form" id="form-contact" action="https://formsubmit.co/rayann.ilkay.28@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="Nouveau message depuis ton portfolio">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_next" value="https://rayannys.github.io/rayann.github.io/merci.html">
@@ -338,6 +343,7 @@
                         <textarea name="Message" rows="5" required></textarea>
                     </label>
                     <button type="submit" class="btn btn--accent">Envoyer le message</button>
+                    <p class="form__status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
