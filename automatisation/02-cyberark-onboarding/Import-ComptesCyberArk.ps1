@@ -32,15 +32,22 @@
 
 [CmdletBinding()]
 param(
-    [string]$FichierComptes = "$PSScriptRoot\donnees\comptes_a_integrer.csv",
-    [string]$FichierConfig  = "$PSScriptRoot\donnees\configuration.json",
-    [string]$DossierSortie  = "$PSScriptRoot\..\rapports",
+    [string]$FichierComptes = '',
+    [string]$FichierConfig  = '',
+    [string]$DossierSortie  = '',
     [switch]$Reel,
     [System.Management.Automation.PSCredential]$Identifiant
 )
 
 $ErrorActionPreference = 'Stop'
-. "$PSScriptRoot\..\commun\Rapport.ps1"
+
+# Dossier où se trouve ce script (calculé ici, car sous Windows PowerShell 5.1
+# la variable $PSScriptRoot peut être vide dans le bloc param ci-dessus)
+$ici = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $FichierComptes) { $FichierComptes = Join-Path $ici 'donnees\comptes_a_integrer.csv' }
+if (-not $FichierConfig) { $FichierConfig = Join-Path $ici 'donnees\configuration.json' }
+if (-not $DossierSortie) { $DossierSortie = Join-Path $ici '..\rapports' }
+. (Join-Path $ici '..\commun\Rapport.ps1')
 
 # ------------------------------------------------------------------
 # Petites fonctions pour parler à l'API CyberArk

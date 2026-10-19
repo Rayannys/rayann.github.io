@@ -38,9 +38,9 @@
 
 [CmdletBinding()]
 param(
-    [string]$FichierRH     = "$PSScriptRoot\donnees\rh.csv",
-    [string]$FichierAD     = "$PSScriptRoot\donnees\comptes_ad.csv",
-    [string]$DossierSortie = "$PSScriptRoot\..\rapports",
+    [string]$FichierRH     = '',
+    [string]$FichierAD     = '',
+    [string]$DossierSortie = '',
     [int]$JoursDormant     = 90,
     [datetime]$DateReference = (Get-Date),
     [string[]]$ServicesAutorisesAdmin = @('DSI'),
@@ -52,8 +52,15 @@ param(
 # Arrêter le script à la première erreur (plus sûr que de continuer avec des données fausses)
 $ErrorActionPreference = 'Stop'
 
+# Dossier où se trouve ce script (calculé ici, car sous Windows PowerShell 5.1
+# la variable $PSScriptRoot peut être vide dans le bloc param ci-dessus)
+$ici = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $FichierRH) { $FichierRH = Join-Path $ici 'donnees\rh.csv' }
+if (-not $FichierAD) { $FichierAD = Join-Path $ici 'donnees\comptes_ad.csv' }
+if (-not $DossierSortie) { $DossierSortie = Join-Path $ici '..\rapports' }
+
 # Charger mes fonctions communes (rapport HTML, messages colorés)
-. "$PSScriptRoot\..\commun\Rapport.ps1"
+. (Join-Path $ici '..\commun\Rapport.ps1')
 
 # ------------------------------------------------------------------
 # ÉTAPE 1 : Lire les fichiers

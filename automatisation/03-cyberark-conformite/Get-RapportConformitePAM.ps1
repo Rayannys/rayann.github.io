@@ -29,8 +29,8 @@
 
 [CmdletBinding()]
 param(
-    [string]$FichierExport  = "$PSScriptRoot\donnees\export_comptes.json",
-    [string]$DossierSortie  = "$PSScriptRoot\..\rapports",
+    [string]$FichierExport  = '',
+    [string]$DossierSortie  = '',
     [int]$JoursRotation     = 90,
     [datetime]$DateReference = (Get-Date),
     [switch]$Reel,
@@ -39,7 +39,13 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-. "$PSScriptRoot\..\commun\Rapport.ps1"
+
+# Dossier où se trouve ce script (calculé ici, car sous Windows PowerShell 5.1
+# la variable $PSScriptRoot peut être vide dans le bloc param ci-dessus)
+$ici = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $FichierExport) { $FichierExport = Join-Path $ici 'donnees\export_comptes.json' }
+if (-not $DossierSortie) { $DossierSortie = Join-Path $ici '..\rapports' }
+. (Join-Path $ici '..\commun\Rapport.ps1')
 
 # CyberArk donne les dates en "epoch" = nombre de secondes depuis le 01/01/1970.
 # Cette fonction les convertit en vraie date lisible.
